@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking Custom CSS File -->
+    <link rel="stylesheet" href="/css/sign_up.css">
+
+    <!-- Including jQuery libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    
+    <div class="c container">
+        <div id="g">
+            <!-- Heading for sign-up section -->
+            <h1>
+                SIGN-UP
+            </h1>
+
+            <div class="user-sup container">
+                <!-- Form for user sign-up -->
+                <form action="/users/create" method="post">
+
+                    <!-- Name input field -->
+                    <input style="padding-left: 10px;" type="text" name="name" placeholder="Enter Your Name" required>
+
+                    <!-- Email input field -->
+                    <input style="padding-left: 10px;" type="email" name="email" placeholder="Enter Your Email" required>
+
+                    <!-- Password input field -->
+                    <input style="padding-left: 10px;" type="password" name="password" placeholder="Password" required>
+
+                    <!-- Confirm password input field -->
+                    <input style="padding-left: 10px;" type="password" name="confirmPassword" placeholder="Confirm Password" required>
+
+                    <!-- Submit button for sign-up form -->
+                    <input type="submit" id="sup-btn" value="Sign Up">
+
+                </form>
+
+                <p class="gauth">
+
+                    <!-- Google logo image -->
+                    <img src="/images/google.png" width="25px" alt="google">
+
+                    <!-- Link to sign-in/sign-up with Google functionality -->
+                    <a href="/users/auth/google">Sign-in/Sign-up With Google</a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function (){
+            console.log("signup");
+            $('.signup-h').addClass("active") // Adds "active" class to the sign-up navigation link
+        })
+    </script>
+</body>
+</html>

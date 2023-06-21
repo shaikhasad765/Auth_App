@@ -1,0 +1,12 @@
+/* Styles for the otp class */
+
+.otp{
+    pointer-events: none; 
+}
+
+/* Styles for the cursor class */
+
+.cursor{
+    cursor: not-allowed;
+    width: min-content;
+}

@@ -1,0 +1,54 @@
+<!-- Linking CSS File -->
+<link rel="stylesheet" href="/css/header.css">
+
+<header>
+    <!-- Navigation section -->
+    <nav>
+        <div class="nav-links">
+            <div class="img-cont">
+                <!-- Header Logo -->
+                <img class="logo" src="/images/logo.png" alt="Logo"> 
+                <b 
+                    style=
+                    "font-size: large;
+                    color: white;
+                    ">
+                    Authentication App
+                </b>
+            </div>
+            <div class="ul-cont">
+                <ul class="h-links">
+                    <li class="head-anch">
+                        <!-- Home link -->
+                        <a href="/">Home</a>
+                    </li>
+
+                    <!-- Check if user is authenticated -->
+                    <% if(locals.user){ %>
+                        <li class="head-anch">
+                            <!-- User profile link with name -->
+                            <a href="/users/profile"> <%= user.name %></a>
+                        </li>
+
+                        <li class="head-anch">
+                            <!-- Sign-out link -->
+                            <a href="/users/sign-out">Sign-out</a>
+                        </li>
+                    <% } else { %>
+                        <!-- Display these links if user is not authenticated -->
+                        <li class="signin-h">
+                            <!-- Sign-in link -->
+                            <a href="/users/sign-in">Sign-IN</a>
+                        </li>
+                        <li class="signup-h">
+                            <!-- Sign-up link -->
+                            <a href="/users/sign-up">Sign-UP</a>
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+
+</header>

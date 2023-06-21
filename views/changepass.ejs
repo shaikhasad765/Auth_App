@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="/css/changepass.css">
+    <title> <%= title %> </title>
+</head>
+<body>
+
+    <div class="change-pass">
+
+        <!-- Change password form section -->
+        <div class="form-conter">
+
+            <!-- Form to update password -->
+            <form action="/users/update/<%= user.id %>" method="post">
+                <h2>Enter New Password</h2>
+                <hr width="100%">
+
+                <!-- Email input (disabled) -->
+                <input style="background-color: antiquewhite;" type="email" name="email" value="<%= user.email %>">
+
+                <!-- Old password input -->
+                <input type="password" name="opass" placeholder="Old Password">
+
+                <!-- New password input -->
+                <input type="password" name="npass" placeholder="New Password">
+
+                <span>
+                    <!-- Change password button -->
+                    <input type="submit" id="change-btn" value="Change">
+
+                    <!-- Forget password link -->
+                    <a href="/users/forget-password">&nbsp;Forget password</a>
+                </span>
+                </form>
+        </div> 
+    </div>
+</body>
+</html>

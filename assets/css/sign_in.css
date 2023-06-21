@@ -1,0 +1,105 @@
+/* Styles for the body element */
+
+body{
+    background-image: url('/images/signin.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* Styles for the main-c container */
+
+.main-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 79.5vh;
+}
+
+/* Styles for the main container */
+
+.main{
+    display: flex;
+    background: linear-gradient(to right, rgb(118, 162, 229), rgb(171, 197, 236));
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 40vh;
+    opacity: 0.7;
+}
+
+/* Styles for the main container on hover  */
+
+.main:hover{
+    box-shadow: 4px 4px 4px rgba(0, 255, 98, 0.3);
+}
+
+/* Styles for the credentials container */
+
+.credentials{
+    text-align: center;
+}
+
+/* Styles for the form inside credentials container */
+
+.credentials form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for the input fields inside the form */
+
+.credentials form input{
+    width: 35vh;
+    height: 4vh;
+    margin-top: 5%;
+    border-radius: 15px;
+    border: none;
+    
+}
+
+/* Styles for the input fields when hovered */
+
+.credentials input:hover{
+    box-shadow: 4px 4px 4px rgba(0, 255, 98, 0.3);
+    border: linear-gradient(to right, rgb(118, 162, 229), rgb(171, 197, 236));
+}
+
+/* Styles for the buttons inside the form */
+
+.credentials form div .btn{
+    width: 10vh;
+    background-color: rgb(71, 71, 71);
+    color: wheat;
+    margin-bottom: 10px;
+}
+
+/* Styles for the buttons when hovered */
+
+.btn:hover{
+    transform: scale(1.1);
+    background: linear-gradient(-120deg, #4285F4, #34A853, #FBBC05, #EA4335);
+}
+
+/* Styles for the anchor tag inside redirect container */
+
+.redirect a{
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 550;
+}
+
+/* Styles for the anchor tag inside redirect container */
+
+.gauth{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    font-size: 1.8rem;
+    padding: 1%;
+    border-radius: 20px;
+}

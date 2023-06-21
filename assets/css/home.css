@@ -1,0 +1,130 @@
+/* Styles for paragraphs and h1 elements */
+
+p,h1{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Styles for the body */
+
+body{
+    background-image: url('/images/home.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    justify-content: center; 
+}
+
+/* Styles for the container */
+
+.container{
+    display: flex;
+    height: 79.4vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Styles for the main section */
+
+.main{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+/* Styles for the header section */
+
+.head{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    justify-content: space-evenly;
+    height: 10vh;
+    align-items: center;
+}
+
+/* Styles for the project section */
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Styles for the pseudo-element before the data section */
+
+.data:before {
+    border-bottom-left-radius: 30px;
+}
+
+/* Styles for the data section */
+
+.data{
+    position: relative;
+    margin-top: 410px;
+    width: 1200px;
+    background-image: url('/images/boat.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: 260px;
+    text-align: center;
+    justify-content: center;
+    border-bottom-left-radius: 260px;
+    border-bottom-right-radius: 260px ;
+    opacity: 0.9;
+}
+
+/* Styles for the h1 element within the data section */
+
+.data h1{
+    color: white;
+    padding: 1%;
+    font-family: cursive;
+}
+
+/* Styles for the user-info section */
+
+.user-info{
+    color: white;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Styles for the cp-div section */
+
+.cp-div {
+    background-color: antiquewhite;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    transition: color 0.3s;
+    border: none;
+}
+
+/* Styles for the cp-div section on hover */
+
+.cp-div:hover{
+    transform: scale(1.2);
+    background: linear-gradient(-120deg, #EA4335, #FBBC05, #34A853, #4285F4);
+}
+
+/* Styles for the anchor tags within the cp-div section */
+
+.cp-div a{
+    color: #1D0C5A;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+/* Styles for the anchor tags within the cp-div section on hover */
+
+.cp-div a:hover {
+    color: white;
+}

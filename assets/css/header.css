@@ -1,0 +1,73 @@
+/* Styles for the header */
+
+header {
+    background: linear-gradient(-120deg, #4285F4, #34A853, #FBBC05, #e78f87);
+    opacity: 0.8;
+}
+
+/* Styles for all anchor tags */
+
+a {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Styles for the "h-links" class */
+
+.h-links {
+    margin-top: 1px;
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* Styles for the list items within the "h-links" class */
+
+.h-links li {
+    list-style: none;
+    width: 40%;
+    margin-left: 8px;
+}
+
+/* Styles for the anchor tags within the list items */
+
+.h-links li a {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bolder;
+}
+
+/* Styles for list items when hovering */
+
+li:hover{
+    border-radius: 20px;
+}
+
+/* Styles for the logo */
+
+.logo {
+    width: 40px; 
+    height: 38px;
+    align-items: center;
+}
+
+/* Styles for the image and unordered list containers */
+
+.img-cont,
+.ul-cont {
+    display: inline-block;
+}
+
+.ul-cont {
+    margin-top: 12px;
+}
+
+/* Styles for the navigation links */
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

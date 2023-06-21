@@ -1,0 +1,87 @@
+/* Styles background image for the body */
+
+body{
+    background-image: url('/images/home.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    justify-content: center; 
+}
+
+/* Styles for a change pass container*/
+
+.change-pass {
+    height: 80vh;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Styles for a form container */
+
+.form-conter{
+    display: flex;
+    width: 100%;
+    margin-top: 355px;
+    background-image: url('/images/boat.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    opacity: 0.9;
+}
+
+.form-conter form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.form-conter form input{
+    width: 60%;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+}
+
+.form-conter form input:hover{
+    box-shadow: 4px 4px 4px rgba(0, 255, 98, 0.3);
+}
+
+.form-conter form span{
+    font-size: 2rem;
+    margin: 0.7%;
+    color: wheat;
+} 
+
+.form-conter form a{
+    color: white;
+}
+
+.form-conter h2{
+    margin-top: 0%; 
+    margin-bottom: 0%; 
+    color: white;
+    font-family: cursive;
+}
+
+/* Styles for a button */
+
+#change-btn{
+    background-color: antiquewhite;
+    width: 150px;
+    color: brown;
+    border: none;
+}
+
+#change-btn:hover{
+    transform: scale(1.1);
+    background: linear-gradient(-120deg, #EA4335, #FBBC05, #34A853, #4285F4);
+}

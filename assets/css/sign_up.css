@@ -1,0 +1,101 @@
+/* Styles for the body element */
+
+body{
+    background-image: url('/images/signup.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* Styles for the user-sup container */
+
+.user-sup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
+/* Styles for the h1 element */
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    padding: 0%;
+}
+
+/* Styles for the form inside user-sup container */
+
+.user-sup form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for the input fields inside the form */
+
+.user-sup form input{
+    border-radius: 15px;
+    height: 5vh;
+    margin-bottom: 5%;
+    width: 350px;
+    border: none;
+}
+
+/* Styles for the input fields when hovered */
+
+.user-sup form input:hover{
+    box-shadow: 4px 4px 4px rgba(0, 255, 98, 0.3);
+    border: linear-gradient(to right, rgb(118, 162, 229), rgb(171, 197, 236));
+}
+
+/* Styles for the gauth container */
+
+.gauth{
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1%;
+    border-radius: 30px;
+    background-color: white;
+    margin-top: 1%;
+}
+
+/* Styles for the c container */
+
+.c{
+    height: 79.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for the g element  */
+
+#g{
+    background: linear-gradient(to right, rgb(118, 162, 229), rgb(171, 197, 236));
+    width: 500px;
+    height: 460px;
+    margin-top: 5%;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+
+/* Styles for the buttons  */
+
+#sup-btn{
+    width: 130px;
+    background-color: grey;
+    color: wheat;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+#sup-btn:hover{
+    transform: scale(1.1);
+    background: linear-gradient(-120deg, #4285F4, #34A853, #FBBC05, #EA4335);
+}

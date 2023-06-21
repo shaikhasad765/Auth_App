@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Linking the CSS File -->
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Home</title>
+</head>
+<body>
+
+
+    <div class="user-c container">
+        
+        <!-- User data section -->
+        <div class="data">
+
+            <% if(locals.user){ %>
+                <h1>HEY! <%= user.name %> Welcome to Our Site</h1> <!-- Welcome message with user name -->
+                <hr width="99%">
+
+                <!-- User information section -->
+                <div class="user-info">
+                    <h2>User Information</h2>
+                    <p>Email: <%= user.email %></p> <!-- User email -->
+                    <p>Name: <%= user.name %></p> <!-- User name -->
+                </div>
+
+                <!-- Change password link -->
+                <div class="cp-div">
+                    <a href="/users/changepass">
+                        Change Password
+                    </a>
+                </div>
+                
+                <% } %>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function (){
+            console.log("home");
+            $('.home-h').addClass("active") // Add "active" class to the home link in the navigation
+        })
+    </script>
+</body>
+</html>
